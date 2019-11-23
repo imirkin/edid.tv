@@ -62,7 +62,7 @@ class EDIDTextUploadForm(forms.Form):
     def clean_text_type(self):
         text_type = self.cleaned_data['text_type']
 
-        if text_type not in ['hex', 'xrandr']:
+        if text_type not in ['hex', 'xrandr', 'xorglog']:
             raise forms.ValidationError('Text type is invalid.')
 
         return text_type
@@ -85,6 +85,10 @@ class EDIDTextUploadForm(forms.Form):
 
         elif text_type == 'xrandr':
             for edid in EDIDUploadFormCleaner.clean_xrandr(text):
+                self.edid_list.append(codecs.decode(edid, encoding='hex'))
+
+        elif text_type == 'xorglog':
+            for edid in EDIDUploadFormCleaner.clean_xorglog(text):
                 self.edid_list.append(codecs.decode(edid, encoding='hex'))
 
         if self.edid_list == []:

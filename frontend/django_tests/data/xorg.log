@@ -1,0 +1,462 @@
+[3098825.028] 
+X.Org X Server 1.20.5
+X Protocol Version 11, Revision 0
+[3098825.028] Build Date: 31 August 2019  03:34:50PM
+[3098825.028]  
+[3098825.028] Current version of pixman: 0.38.4
+[3098825.028] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[3098825.028] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[3098825.028] (==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 17 21:13:16 2019
+[3098825.030] (==) Using config file: "/etc/X11/xorg.conf"
+[3098825.030] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[3098825.030] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[3098825.032] (==) No Layout section.  Using the first Screen section.
+[3098825.032] (==) No screen section available. Using defaults.
+[3098825.032] (**) |-->Screen "Default Screen Section" (0)
+[3098825.032] (**) |   |-->Monitor "<default monitor>"
+[3098825.032] (==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+[3098825.032] (**) |   |-->Device "Card0"
+[3098825.033] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[3098825.033] (**) Option "AutoAddGPU" "false"
+[3098825.033] (==) Automatically adding devices
+[3098825.033] (==) Automatically enabling devices
+[3098825.033] (**) Not automatically adding GPU devices
+[3098825.033] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[3098825.033] (WW) The directory "/usr/share/fonts/TTF/" does not exist.
+[3098825.033] 	Entry deleted from font path.
+[3098825.033] (WW) The directory "/usr/share/fonts/OTF/" does not exist.
+[3098825.033] 	Entry deleted from font path.
+[3098825.033] (WW) The directory "/usr/share/fonts/Type1/" does not exist.
+[3098825.033] 	Entry deleted from font path.
+[3098825.035] (==) FontPath set to:
+	/usr/share/fonts/misc/,
+	/usr/share/fonts/100dpi/,
+	/usr/share/fonts/75dpi/
+[3098825.035] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[3098825.035] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[3098825.035] (II) Loader magic: 0x55f72b0fac60
+[3098825.035] (II) Module ABI versions:
+[3098825.035] 	X.Org ANSI C Emulation: 0.4
+[3098825.035] 	X.Org Video Driver: 24.0
+[3098825.035] 	X.Org XInput driver : 24.1
+[3098825.035] 	X.Org Server Extension : 10.0
+[3098825.060] (II) xfree86: Adding drm device (/dev/dri/card0)
+[3098825.060] (II) xfree86: Adding drm device (/dev/dri/card1)
+[3098825.060] (II) xfree86: Adding drm device (/dev/dri/card2)
+[3098825.067] (--) PCI:*(2@0:0:0) 10de:1d01:1028:11c7 rev 161, Mem @ 0xf9000000/16777216, 0xa0000000/268435456, 0xbe000000/33554432, I/O @ 0x0000ef00/128, BIOS @ 0x????????/131072
+[3098825.067] (--) PCI: (4@0:0:0) 10de:040a:10de:0491 rev 161, Mem @ 0xf4000000/16777216, 0xc0000000/268435456, 0xf2000000/33554432, I/O @ 0x0000bf00/128, BIOS @ 0x????????/131072
+[3098825.067] (--) PCI: (9@0:0:0) 10de:002d:0000:0000 rev 21, Mem @ 0xf7000000/16777216, 0xde000000/33554432, BIOS @ 0x????????/65536
+[3098825.067] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[3098825.067] (II) LoadModule: "extmod"
+[3098825.067] (II) Module "extmod" already built-in
+[3098825.068] (II) LoadModule: "dbe"
+[3098825.068] (II) Module "dbe" already built-in
+[3098825.068] (II) LoadModule: "dri"
+[3098825.068] (II) Module "dri" already built-in
+[3098825.068] (II) LoadModule: "record"
+[3098825.068] (II) Module "record" already built-in
+[3098825.068] (II) LoadModule: "glx"
+[3098825.070] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[3098825.071] (II) Module glx: vendor="X.Org Foundation"
+[3098825.071] 	compiled for 1.20.5, module version = 1.0.0
+[3098825.071] 	ABI class: X.Org Server Extension, version 10.0
+[3098825.071] (II) LoadModule: "dri2"
+[3098825.071] (II) Module "dri2" already built-in
+[3098825.071] (II) LoadModule: "nouveau"
+[3098825.072] (II) Loading /usr/lib64/xorg/modules/drivers/nouveau_drv.so
+[3098825.072] (II) Module nouveau: vendor="X.Org Foundation"
+[3098825.072] 	compiled for 1.20.5, module version = 1.0.16
+[3098825.072] 	Module class: X.Org Video Driver
+[3098825.072] 	ABI class: X.Org Video Driver, version 24.0
+[3098825.072] (II) NOUVEAU driver 
+[3098825.072] (II) NOUVEAU driver for NVIDIA chipset families :
+[3098825.072] 	RIVA TNT            (NV04)
+[3098825.072] 	RIVA TNT2           (NV05)
+[3098825.072] 	GeForce 256         (NV10)
+[3098825.072] 	GeForce 2           (NV11, NV15)
+[3098825.072] 	GeForce 4MX         (NV17, NV18)
+[3098825.072] 	GeForce 3           (NV20)
+[3098825.072] 	GeForce 4Ti         (NV25, NV28)
+[3098825.072] 	GeForce FX          (NV3x)
+[3098825.072] 	GeForce 6           (NV4x)
+[3098825.072] 	GeForce 7           (G7x)
+[3098825.072] 	GeForce 8           (G8x)
+[3098825.072] 	GeForce 9           (G9x)
+[3098825.072] 	GeForce GTX 2xx/3xx (GT2xx)
+[3098825.072] 	GeForce GTX 4xx/5xx (GFxxx)
+[3098825.072] 	GeForce GTX 6xx/7xx (GKxxx)
+[3098825.073] 	GeForce GTX 9xx     (GMxxx)
+[3098825.073] 	GeForce GTX 10xx    (GPxxx)
+[3098825.073] (++) using VT number 7
+
+[3098825.075] (II) [drm] nouveau interface version: 1.3.1
+[3098825.075] (II) Loading sub module "dri2"
+[3098825.075] (II) LoadModule: "dri2"
+[3098825.075] (II) Module "dri2" already built-in
+[3098825.075] (--) NOUVEAU(0): Chipset: "NVIDIA NV138"
+[3098825.075] (II) NOUVEAU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[3098825.075] (==) NOUVEAU(0): Depth 24, (--) framebuffer bpp 32
+[3098825.075] (==) NOUVEAU(0): RGB weight 888
+[3098825.075] (==) NOUVEAU(0): Default visual is TrueColor
+[3098825.075] (**) NOUVEAU(0): Option "DRI" "3"
+[3098825.075] (==) NOUVEAU(0): Using HW cursor
+[3098825.075] (**) NOUVEAU(0): Allowed maximum DRI level 3.
+[3098825.075] (==) NOUVEAU(0): GLX sync to VBlank enabled.
+[3098825.075] (==) NOUVEAU(0): Page flipping enabled
+[3098825.075] (==) NOUVEAU(0): Swap limit set to 1 [Max allowed 2]
+[3098825.075] (==) NOUVEAU(0): Page flipping synced to vblank by kernel.
+[3098825.075] (II) NOUVEAU(0): Initializing outputs ...
+[3098825.147] (II) NOUVEAU(0): Output DVI-D-1 using monitor section Mon0
+[3098825.147] (**) NOUVEAU(0): Option "Rotate" "left"
+[3098825.217] (II) NOUVEAU(0): Output HDMI-1 using monitor section Mon1
+[3098825.218] (**) NOUVEAU(0): Option "RightOf" "DVI-D-1"
+[3098825.218] (**) NOUVEAU(0): Option "Rotate" "right"
+[3098825.218] (II) NOUVEAU(0): 2 crtcs needed for screen.
+[3098825.218] (II) NOUVEAU(0): Allocated crtc nr. 0 to this screen.
+[3098825.218] (II) NOUVEAU(0): Allocated crtc nr. 1 to this screen.
+[3098825.289] (II) NOUVEAU(0): EDID for output DVI-D-1
+[3098825.289] (II) NOUVEAU(0): Manufacturer: DEL  Model: a0ba  Serial#: 809841491
+[3098825.289] (II) NOUVEAU(0): Year: 2018  Week: 23
+[3098825.289] (II) NOUVEAU(0): EDID Version: 1.3
+[3098825.289] (II) NOUVEAU(0): Digital Display Input
+[3098825.289] (II) NOUVEAU(0): Max Image Size [cm]: horiz.: 52  vert.: 32
+[3098825.289] (II) NOUVEAU(0): Gamma: 2.20
+[3098825.289] (II) NOUVEAU(0): DPMS capabilities: StandBy Suspend Off
+[3098825.289] (II) NOUVEAU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[3098825.289] (II) NOUVEAU(0): First detailed timing is preferred mode
+[3098825.289] (II) NOUVEAU(0): redX: 0.660 redY: 0.332   greenX: 0.302 greenY: 0.613
+[3098825.289] (II) NOUVEAU(0): blueX: 0.150 blueY: 0.063   whiteX: 0.313 whiteY: 0.329
+[3098825.289] (II) NOUVEAU(0): Supported established timings:
+[3098825.290] (II) NOUVEAU(0): 720x400@70Hz
+[3098825.290] (II) NOUVEAU(0): 640x480@60Hz
+[3098825.290] (II) NOUVEAU(0): 640x480@75Hz
+[3098825.290] (II) NOUVEAU(0): 800x600@60Hz
+[3098825.290] (II) NOUVEAU(0): 800x600@75Hz
+[3098825.290] (II) NOUVEAU(0): 1024x768@60Hz
+[3098825.290] (II) NOUVEAU(0): 1024x768@75Hz
+[3098825.290] (II) NOUVEAU(0): 1280x1024@75Hz
+[3098825.290] (II) NOUVEAU(0): Manufacturer's mask: 0
+[3098825.290] (II) NOUVEAU(0): Supported standard timings:
+[3098825.290] (II) NOUVEAU(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[3098825.290] (II) NOUVEAU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[3098825.290] (II) NOUVEAU(0): #2: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[3098825.290] (II) NOUVEAU(0): #3: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[3098825.290] (II) NOUVEAU(0): #4: hsize: 1920  vsize 1200  refresh: 60  vid: 209
+[3098825.290] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.290] (II) NOUVEAU(0): clock: 154.0 MHz   Image Size:  518 x 324 mm
+[3098825.290] (II) NOUVEAU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[3098825.290] (II) NOUVEAU(0): v_active: 1200  v_sync: 1203  v_sync_end 1209 v_blanking: 1235 v_border: 0
+[3098825.290] (II) NOUVEAU(0): Serial No: CFV9N8680E3S
+[3098825.290] (II) NOUVEAU(0): Monitor name: DELL U2415
+[3098825.290] (II) NOUVEAU(0): Ranges: V min: 49 V max: 61 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[3098825.290] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.290] (II) NOUVEAU(0): clock: 148.5 MHz   Image Size:  518 x 324 mm
+[3098825.290] (II) NOUVEAU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[3098825.290] (II) NOUVEAU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[3098825.290] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.290] (II) NOUVEAU(0): clock: 74.2 MHz   Image Size:  518 x 324 mm
+[3098825.290] (II) NOUVEAU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[3098825.290] (II) NOUVEAU(0): v_active: 540  v_sync: 542  v_sync_end 547 v_blanking: 562 v_border: 0
+[3098825.290] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.290] (II) NOUVEAU(0): clock: 74.2 MHz   Image Size:  518 x 324 mm
+[3098825.290] (II) NOUVEAU(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[3098825.290] (II) NOUVEAU(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[3098825.290] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.290] (II) NOUVEAU(0): clock: 27.0 MHz   Image Size:  518 x 324 mm
+[3098825.290] (II) NOUVEAU(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[3098825.290] (II) NOUVEAU(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[3098825.290] (II) NOUVEAU(0): Number of EDID sections to follow: 1
+[3098825.290] (II) NOUVEAU(0): EDID (in hex):
+[3098825.290] (II) NOUVEAU(0): 	00ffffffffffff0010acbaa053334530
+[3098825.290] (II) NOUVEAU(0): 	171c010380342078ea0495a9554d9d26
+[3098825.290] (II) NOUVEAU(0): 	105054a54b00714f8180a940d1c0d100
+[3098825.290] (II) NOUVEAU(0): 	010101010101283c80a070b023403020
+[3098825.290] (II) NOUVEAU(0): 	360006442100001e000000ff00434656
+[3098825.290] (II) NOUVEAU(0): 	394e383638304533530a000000fc0044
+[3098825.290] (II) NOUVEAU(0): 	454c4c2055323431350a2020000000fd
+[3098825.290] (II) NOUVEAU(0): 	00313d1e5311000a20202020202001a5
+[3098825.290] (II) NOUVEAU(0): 	020322f14f9005040302071601141f12
+[3098825.290] (II) NOUVEAU(0): 	132021222309070765030c0010008301
+[3098825.290] (II) NOUVEAU(0): 	0000023a801871382d40582c45000644
+[3098825.290] (II) NOUVEAU(0): 	2100001e011d8018711c1620582c2500
+[3098825.290] (II) NOUVEAU(0): 	06442100009e011d007251d01e206e28
+[3098825.291] (II) NOUVEAU(0): 	550006442100001e8c0ad08a20e02d10
+[3098825.291] (II) NOUVEAU(0): 	103e9600064421000018000000000000
+[3098825.291] (II) NOUVEAU(0): 	00000000000000000000000000000082
+[3098825.291] (II) NOUVEAU(0): Printing probed modes for output DVI-D-1
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync +vsync (74.0 kHz eP)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x30.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x25.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x30.0   74.18  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.7 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1920x1080"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[3098825.291] (II) NOUVEAU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[3098825.364] (II) NOUVEAU(0): EDID for output HDMI-1
+[3098825.364] (II) NOUVEAU(0): Manufacturer: DEL  Model: a0ba  Serial#: 809979987
+[3098825.364] (II) NOUVEAU(0): Year: 2018  Week: 23
+[3098825.364] (II) NOUVEAU(0): EDID Version: 1.3
+[3098825.364] (II) NOUVEAU(0): Digital Display Input
+[3098825.364] (II) NOUVEAU(0): Max Image Size [cm]: horiz.: 52  vert.: 32
+[3098825.364] (II) NOUVEAU(0): Gamma: 2.20
+[3098825.364] (II) NOUVEAU(0): DPMS capabilities: StandBy Suspend Off
+[3098825.364] (II) NOUVEAU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[3098825.364] (II) NOUVEAU(0): First detailed timing is preferred mode
+[3098825.364] (II) NOUVEAU(0): redX: 0.660 redY: 0.332   greenX: 0.302 greenY: 0.613
+[3098825.364] (II) NOUVEAU(0): blueX: 0.150 blueY: 0.063   whiteX: 0.313 whiteY: 0.329
+[3098825.364] (II) NOUVEAU(0): Supported established timings:
+[3098825.364] (II) NOUVEAU(0): 720x400@70Hz
+[3098825.364] (II) NOUVEAU(0): 640x480@60Hz
+[3098825.364] (II) NOUVEAU(0): 640x480@75Hz
+[3098825.364] (II) NOUVEAU(0): 800x600@60Hz
+[3098825.364] (II) NOUVEAU(0): 800x600@75Hz
+[3098825.364] (II) NOUVEAU(0): 1024x768@60Hz
+[3098825.364] (II) NOUVEAU(0): 1024x768@75Hz
+[3098825.365] (II) NOUVEAU(0): 1280x1024@75Hz
+[3098825.365] (II) NOUVEAU(0): Manufacturer's mask: 0
+[3098825.365] (II) NOUVEAU(0): Supported standard timings:
+[3098825.365] (II) NOUVEAU(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[3098825.365] (II) NOUVEAU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[3098825.365] (II) NOUVEAU(0): #2: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[3098825.365] (II) NOUVEAU(0): #3: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[3098825.365] (II) NOUVEAU(0): #4: hsize: 1920  vsize 1200  refresh: 60  vid: 209
+[3098825.365] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.365] (II) NOUVEAU(0): clock: 154.0 MHz   Image Size:  518 x 324 mm
+[3098825.365] (II) NOUVEAU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[3098825.365] (II) NOUVEAU(0): v_active: 1200  v_sync: 1203  v_sync_end 1209 v_blanking: 1235 v_border: 0
+[3098825.365] (II) NOUVEAU(0): Serial No: CFV9N8680GPS
+[3098825.365] (II) NOUVEAU(0): Monitor name: DELL U2415
+[3098825.365] (II) NOUVEAU(0): Ranges: V min: 49 V max: 61 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[3098825.365] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.365] (II) NOUVEAU(0): clock: 148.5 MHz   Image Size:  518 x 324 mm
+[3098825.365] (II) NOUVEAU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[3098825.365] (II) NOUVEAU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[3098825.365] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.365] (II) NOUVEAU(0): clock: 74.2 MHz   Image Size:  518 x 324 mm
+[3098825.365] (II) NOUVEAU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[3098825.365] (II) NOUVEAU(0): v_active: 540  v_sync: 542  v_sync_end 547 v_blanking: 562 v_border: 0
+[3098825.365] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.365] (II) NOUVEAU(0): clock: 74.2 MHz   Image Size:  518 x 324 mm
+[3098825.365] (II) NOUVEAU(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[3098825.365] (II) NOUVEAU(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[3098825.365] (II) NOUVEAU(0): Supported detailed timing:
+[3098825.365] (II) NOUVEAU(0): clock: 27.0 MHz   Image Size:  518 x 324 mm
+[3098825.365] (II) NOUVEAU(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[3098825.365] (II) NOUVEAU(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[3098825.365] (II) NOUVEAU(0): Number of EDID sections to follow: 1
+[3098825.365] (II) NOUVEAU(0): EDID (in hex):
+[3098825.365] (II) NOUVEAU(0): 	00ffffffffffff0010acbaa053504730
+[3098825.365] (II) NOUVEAU(0): 	171c010380342078ea0495a9554d9d26
+[3098825.365] (II) NOUVEAU(0): 	105054a54b00714f8180a940d1c0d100
+[3098825.365] (II) NOUVEAU(0): 	010101010101283c80a070b023403020
+[3098825.365] (II) NOUVEAU(0): 	360006442100001e000000ff00434656
+[3098825.365] (II) NOUVEAU(0): 	394e383638304750530a000000fc0044
+[3098825.365] (II) NOUVEAU(0): 	454c4c2055323431350a2020000000fd
+[3098825.365] (II) NOUVEAU(0): 	00313d1e5311000a2020202020200167
+[3098825.365] (II) NOUVEAU(0): 	020322f14f9005040302071601141f12
+[3098825.365] (II) NOUVEAU(0): 	132021222309070765030c0010008301
+[3098825.365] (II) NOUVEAU(0): 	0000023a801871382d40582c45000644
+[3098825.365] (II) NOUVEAU(0): 	2100001e011d8018711c1620582c2500
+[3098825.365] (II) NOUVEAU(0): 	06442100009e011d007251d01e206e28
+[3098825.365] (II) NOUVEAU(0): 	550006442100001e8c0ad08a20e02d10
+[3098825.365] (II) NOUVEAU(0): 	103e9600064421000018000000000000
+[3098825.365] (II) NOUVEAU(0): 	00000000000000000000000000000082
+[3098825.365] (II) NOUVEAU(0): Printing probed modes for output HDMI-1
+[3098825.365] (II) NOUVEAU(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync +vsync (74.0 kHz eP)
+[3098825.365] (II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[3098825.365] (II) NOUVEAU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[3098825.365] (II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x30.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x25.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x30.0   74.18  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.7 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[3098825.366] (II) NOUVEAU(0): Output DVI-D-1 connected
+[3098825.366] (II) NOUVEAU(0): Output HDMI-1 connected
+[3098825.366] (II) NOUVEAU(0): Using user preference for initial modes
+[3098825.366] (II) NOUVEAU(0): Output DVI-D-1 using initial mode 1920x1200 +0+0
+[3098825.366] (II) NOUVEAU(0): Output HDMI-1 using initial mode 1920x1200 +0+0
+[3098825.366] (==) NOUVEAU(0): Using gamma correction (1.0, 1.0, 1.0)
+[3098825.366] (II) NOUVEAU(0): Virtual size is 2400x1920 (pitch 0)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1200": 154.0 MHz (scaled from 0.0 MHz), 74.0 kHz, 60.0 Hz
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync +vsync (74.0 kHz eP)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080": 148.5 MHz (scaled from 0.0 MHz), 67.5 kHz, 60.0 Hz
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080": 148.5 MHz (scaled from 0.0 MHz), 56.2 kHz, 50.0 Hz
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080": 148.4 MHz (scaled from 0.0 MHz), 67.4 kHz, 59.9 Hz
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080i": 74.2 MHz (scaled from 0.0 MHz), 33.8 kHz, 60.0 Hz (I)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080i": 74.2 MHz (scaled from 0.0 MHz), 28.1 kHz, 50.0 Hz (I)
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080": 74.2 MHz (scaled from 0.0 MHz), 33.8 kHz, 30.0 Hz
+[3098825.366] (II) NOUVEAU(0): Modeline "1920x1080"x30.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)
+[3098825.366] (**) NOUVEAU(0):  Driver mode "1920x1080": 74.2 MHz (scaled from 0.0 MHz), 28.1 kHz, 25.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1920x1080"x25.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1920x1080": 74.2 MHz (scaled from 0.0 MHz), 27.0 kHz, 24.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1920x1080"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1920x1080i": 74.2 MHz (scaled from 0.0 MHz), 33.7 kHz, 59.9 Hz (I)
+[3098825.367] (II) NOUVEAU(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1920x1080": 74.2 MHz (scaled from 0.0 MHz), 33.7 kHz, 30.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1920x1080"x30.0   74.18  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.7 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1920x1080": 74.2 MHz (scaled from 0.0 MHz), 27.0 kHz, 24.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1920x1080"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1600x1200": 162.0 MHz (scaled from 0.0 MHz), 75.0 kHz, 60.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1280x1024": 135.0 MHz (scaled from 0.0 MHz), 80.0 kHz, 75.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1280x1024": 108.0 MHz (scaled from 0.0 MHz), 64.0 kHz, 60.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1152x864": 108.0 MHz (scaled from 0.0 MHz), 67.5 kHz, 75.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 45.0 kHz, 60.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 37.5 kHz, 50.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 45.0 kHz, 59.9 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1024x768": 78.8 MHz (scaled from 0.0 MHz), 60.0 kHz, 75.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "1024x768": 65.0 MHz (scaled from 0.0 MHz), 48.4 kHz, 60.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "800x600": 49.5 MHz (scaled from 0.0 MHz), 46.9 kHz, 75.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "800x600": 40.0 MHz (scaled from 0.0 MHz), 37.9 kHz, 60.3 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "720x576": 27.0 MHz (scaled from 0.0 MHz), 31.2 kHz, 50.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "720x480": 27.0 MHz (scaled from 0.0 MHz), 31.5 kHz, 60.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "720x480": 27.0 MHz (scaled from 0.0 MHz), 31.5 kHz, 59.9 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "640x480": 31.5 MHz (scaled from 0.0 MHz), 37.5 kHz, 75.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "640x480": 25.2 MHz (scaled from 0.0 MHz), 31.5 kHz, 60.0 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "640x480": 25.2 MHz (scaled from 0.0 MHz), 31.5 kHz, 59.9 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[3098825.367] (**) NOUVEAU(0):  Driver mode "720x400": 28.3 MHz (scaled from 0.0 MHz), 31.5 kHz, 70.1 Hz
+[3098825.367] (II) NOUVEAU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[3098825.367] (==) NOUVEAU(0): DPI set to (96, 96)
+[3098825.367] (II) Loading sub module "fb"
+[3098825.367] (II) LoadModule: "fb"
+[3098825.367] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[3098825.368] (II) Module fb: vendor="X.Org Foundation"
+[3098825.368] 	compiled for 1.20.5, module version = 1.0.0
+[3098825.368] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[3098825.368] (II) Loading sub module "shadowfb"
+[3098825.368] (II) LoadModule: "shadowfb"
+[3098825.368] (II) Loading /usr/lib64/xorg/modules/libshadowfb.so
+[3098825.368] (II) Module shadowfb: vendor="X.Org Foundation"
+[3098825.368] 	compiled for 1.20.5, module version = 1.0.0
+[3098825.368] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[3098825.370] (II) NOUVEAU(0): Channel setup complete.
+[3098825.371] (II) NOUVEAU(0): [COPY] async initialised.
+[3098825.371] (II) NOUVEAU(0): Hardware support for Present enabled
+[3098825.371] (II) NOUVEAU(0): [DRI2] Setup complete
+[3098825.371] (II) NOUVEAU(0): [DRI2]   DRI driver: nouveau
+[3098825.371] (II) NOUVEAU(0): [DRI2]   VDPAU driver: nouveau
+[3098825.371] (II) NOUVEAU(0): DRI3 on EXA enabled
+[3098825.371] (II) Loading sub module "exa"
+[3098825.371] (II) LoadModule: "exa"
+[3098825.371] (II) Loading /usr/lib64/xorg/modules/libexa.so
+[3098825.371] (II) Module exa: vendor="X.Org Foundation"
+[3098825.371] 	compiled for 1.20.5, module version = 2.6.0
+[3098825.372] 	ABI class: X.Org Video Driver, version 24.0
+[3098825.372] (II) EXA(0): Driver allocated offscreen pixmaps
+[3098825.372] (II) EXA(0): Driver registered support for the following operations:
+[3098825.372] (II)         Solid
+[3098825.372] (II)         Copy
+[3098825.372] (II)         Composite (RENDER acceleration)
+[3098825.372] (II)         UploadToScreen
+[3098825.372] (II)         DownloadFromScreen
+[3098825.372] (==) NOUVEAU(0): Backing store enabled
+[3098825.372] (==) NOUVEAU(0): Silken mouse enabled
+[3098825.372] (II) NOUVEAU(0): [XvMC] Associated with Nouveau GeForce 8/9 Textured Video.
+[3098825.372] (II) NOUVEAU(0): [XvMC] Extension initialized.
+[3098825.372] (==) NOUVEAU(0): DPMS enabled
+[3098825.372] (WW) NOUVEAU(0): Option "NoLogo" is not used
+[3098825.372] (II) Initializing extension Generic Event Extension
+[3098825.372] (II) Initializing extension SHAPE
+[3098825.372] (II) Initializing extension MIT-SHM
+[3098825.372] (II) Initializing extension XInputExtension
+[3098825.372] (II) Initializing extension XTEST
+[3098825.372] (II) Initializing extension BIG-REQUESTS
+[3098825.372] (II) Initializing extension SYNC
+[3098825.372] (II) Initializing extension XKEYBOARD
+[3098825.372] (II) Initializing extension XC-MISC
+[3098825.372] (II) Initializing extension XFIXES
+[3098825.372] (II) Initializing extension RENDER
+[3098825.372] (II) Initializing extension RANDR
+[3098825.372] (II) Initializing extension COMPOSITE
+[3098825.372] (II) Initializing extension DAMAGE
+[3098825.372] (II) Initializing extension MIT-SCREEN-SAVER
+[3098825.372] (II) Initializing extension DOUBLE-BUFFER
+[3098825.372] (II) Initializing extension RECORD
+[3098825.372] (II) Initializing extension DPMS
+[3098825.372] (II) Initializing extension Present
+[3098825.372] (II) Initializing extension DRI3
+[3098825.372] (II) Initializing extension X-Resource
+[3098825.372] (II) Initializing extension XVideo
+[3098825.373] (II) Initializing extension XVideo-MotionCompensation
+[3098825.373] (II) Initializing extension GLX
+[3098825.401] (II) AIGLX: Loaded and initialized nouveau
+[3098825.401] (II) GLX: Initialized DRI2 GL provider for screen 0
+[3098825.401] (II) Initializing extension XFree86-VidModeExtension
+[3098825.401] (II) Initializing extension XFree86-DGA
+[3098825.401] (II) Initializing extension XFree86-DRI
+[3098825.401] (II) Initializing extension DRI2
+[3098825.406] (II) NOUVEAU(0): NVEnterVT is called.
+[3098825.446] (II) NOUVEAU(0): Setting screen physical size to 635 x 508
+[3098825.446] resize called 2400 1920

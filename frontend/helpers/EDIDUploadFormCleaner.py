@@ -61,3 +61,30 @@ class EDIDUploadFormCleaner:
             elif edid_pattern.match(line):
                 inside_edid = True
                 edid_hex = ''
+
+    @staticmethod
+    def clean_xorglog(text):
+        "This matches the printing logic in hw/xfree86/ddc/print_edid.c"
+
+        inside_edid = False
+        edid_hex = ''
+
+        edid_pattern = re.compile(r'^.*: EDID \(in hex\):$')
+        hex_pattern = re.compile(r'^.*:\s*([0-9a-fA-F]+)$')
+
+        # Parse text line-by-line
+        for line in text.splitlines():
+            # If inside edid block
+            if inside_edid:
+                match = hex_pattern.match(line.strip())
+                if match:
+                    edid_hex += match.group(1)
+                # edid block ended
+                else:
+                    inside_edid = False
+                    # Convert hex to binary and add it to EDIDs list
+                    yield edid_hex
+            # Look for edid block
+            elif edid_pattern.match(line):
+                inside_edid = True
+                edid_hex = ''

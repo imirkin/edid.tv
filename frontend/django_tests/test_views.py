@@ -131,6 +131,7 @@ class EDIDUploadTestCase(EDIDTestMixin, TestCase):
 class EDIDTextUploadTestCase(TestCase):
     def setUp(self):
         Manufacturer.objects.bulk_create([
+            Manufacturer(name_id='DEL', name='Dell Inc.'),
             Manufacturer(name_id='SEC', name='Seiko Epson Corporation'),
             Manufacturer(name_id='UNK', name='Unknown'),
         ])
@@ -240,6 +241,41 @@ class EDIDTextUploadTestCase(TestCase):
         self.assertEqual(response.context_data['succeeded'], 0)
         self.assertEqual(response.context_data['failed'], 1)
         self.assertEqual(response.context_data['duplicate'], 0)
+
+    def test_xorglog(self):
+        xorglog_text = self._read_from_file('xorg.log')
+
+        # Submit Xorg.log output
+        response = self.client.post(
+            self.post_url, {'text': xorglog_text, 'text_type': 'xorglog'}
+        )
+
+        # Check an EDID was parsed and added
+        self.assertEqual(response.context_data['succeeded'], 2)
+        self.assertEqual(response.context_data['failed'], 0)
+        self.assertEqual(response.context_data['duplicate'], 0)
+
+        # Check some of EDID values
+        edid = EDID.objects.get(pk=1)
+        self.assertEqual(
+            len([timing for timing in edid.get_est_timings()
+                 if timing['supported']]),
+            8
+        )
+        self.assertEqual(edid.manufacturer.name_id, 'DEL')
+        self.assertEqual(edid.bdp_video_input, EDID.bdp_video_input_digital)
+        self.assertEqual(edid.monitor_range_limits, True)
+
+        # Duplicate test
+        # Submit Xorg.log output again
+        response = self.client.post(
+            self.post_url, {'text': xorglog_text, 'text_type': 'xorglog'}
+        )
+
+        # Check an EDID was parsed and rejected for duplicate
+        self.assertEqual(response.context_data['succeeded'], 0)
+        self.assertEqual(response.context_data['failed'], 0)
+        self.assertEqual(response.context_data['duplicate'], 2)
 
 
 class EDIDTestCase(EDIDTestMixin, TestCase):
@@ -983,6 +1019,7 @@ class APIUploadTestCase(TestCase):
 class APITextUploadTestCase(TestCase):
     def setUp(self):
         Manufacturer.objects.bulk_create([
+            Manufacturer(name_id='DEL', name='Dell Inc.'),
             Manufacturer(name_id='SEC', name='Seiko Epson Corporation'),
             Manufacturer(name_id='UNK', name='Unknown'),
         ])
@@ -1098,6 +1135,43 @@ class APITextUploadTestCase(TestCase):
         self.assertEqual(data['succeeded'], 0)
         self.assertEqual(data['failed'], 1)
         self.assertEqual(data['duplicate'], 0)
+
+    def test_xorglog(self):
+        xorglog_text = self._read_from_file('xorg.log')
+
+        # Submit Xorglog output
+        response = self.client.post(
+            self.post_url, {'text': xorglog_text, 'text_type': 'xorglog'}
+        )
+        data = json.loads(response.content)
+
+        # Check an EDID was parsed and added
+        self.assertEqual(data['succeeded'], 2)
+        self.assertEqual(data['failed'], 0)
+        self.assertEqual(data['duplicate'], 0)
+
+        # Check some of EDID values
+        edid = EDID.objects.get(pk=1)
+        self.assertEqual(
+            len([timing for timing in edid.get_est_timings()
+                 if timing['supported']]),
+            8
+        )
+        self.assertEqual(edid.manufacturer.name_id, 'DEL')
+        self.assertEqual(edid.bdp_video_input, EDID.bdp_video_input_digital)
+        self.assertEqual(edid.monitor_range_limits, True)
+
+        # Duplicate test
+        # Submit Xorglog output again
+        response = self.client.post(
+            self.post_url, {'text': xorglog_text, 'text_type': 'xorglog'}
+        )
+        data = json.loads(response.content)
+
+        # Check an EDID was parsed and rejected for duplicate
+        self.assertEqual(data['succeeded'], 0)
+        self.assertEqual(data['failed'], 0)
+        self.assertEqual(data['duplicate'], 2)
 
     def test_invalid(self):
         response = self.client.post(

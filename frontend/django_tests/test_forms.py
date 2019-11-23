@@ -200,6 +200,15 @@ class EDIDTextUploadFormTestCase(FormTestMixin, TestCase):
             u'No EDID was parsed.'
         )
 
+    def test_text_xorglog_no_edid(self):
+        # Test Xorg.log with no EDIDs
+        data = self.valid_data
+        data['text_type'] = 'xorglog'
+        self._test_non_field_error(
+            self.valid_data,
+            u'No EDID was parsed.'
+        )
+
     def test_text_type_empty(self):
         # Test an invalid value
         data = self.valid_data
