@@ -46,7 +46,7 @@ class UploadSeleniumTestCase(SeleniumTestCase):
                     .send_keys(edid_file.name)
 
         # Submit upload form
-        self.browser.find_element_by_id('upload-id-upload').submit()
+        self.browser.find_element_by_id('upload-id-upload').click()
 
         WebDriverWait(self.browser, 30).until(
             url_matches("%s/edid/[0-9]+/" % self.live_server_url),
